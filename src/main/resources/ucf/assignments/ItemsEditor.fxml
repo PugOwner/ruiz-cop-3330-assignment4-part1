@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+
+
+<AnchorPane prefHeight="254.0" prefWidth="368.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ucf.assignments.ItemsEditorController">
+   <children>
+      <DatePicker layoutX="96.0" layoutY="42.0" onAction="#changeDueDate" />
+      <TextField layoutX="39.0" layoutY="99.0" onAction="#getDescription" prefHeight="38.0" prefWidth="290.0" />
+      <TextField layoutX="39.0" layoutY="161.0" onAction="#editDescription" prefHeight="38.0" prefWidth="290.0" />
+   </children>
+</AnchorPane>
