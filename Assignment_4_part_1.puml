@@ -1,0 +1,29 @@
+@startuml
+class DisplayAll_ItemsController{
+}
+class DisplayIncompleteItemsController{
+}
+class DisplayCompletedItemsController{
+}
+class HomepageController{
+}
+class Items{
+}
+class ItemsEditorController{
+}
+class ListManager{
+}
+class Main {
+}
+class TodoList{
+}
+javafx.Application <|-- Main
+HomepageController -- Main
+ListManager -- HomepageController
+TodoList - ListManager
+Items - TodoList
+DisplayAll_ItemsController -- ListManager
+DisplayCompletedItemsController -- ListManager
+DisplayIncompleteItemsController -- ListManager
+ItemsEditorController -- ListManager
+@enduml
